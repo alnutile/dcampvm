@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>VM Dev Environment</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>whys</h3>
+						<p class="fragment roll-in">You can have a matching system locally that your host(s)/slice has</p>
+						<p class="fragment roll-in">You may have somes sites using apache solr</p>
+						<p class="fragment roll-in">You may have one site in php 5.2 and one in php 5.3 etc</p>
+						<p class="fragment roll-in">You and your co-workers know things will just work per site for all of you.</p>
+				</section>
+
+				<section>
+					<h3>hows</h3>
+					<p class="fragment roll-in">Virtual Box</p>
+					<p class="fragment roll-in"><a hre="http://www.vagrantup.com" target="_blank">Vagrant</a>   (not in this presentation)</p>
+				</section>
+				
+				<section>
+					<h3>Choosing the boot CD</h3>
+					<p>
+						<img src="images/iso_choice.png" alt="iso_choice" width="924" height="529">
+					</p>
+				</section>
+
+				<section>
+					<h3>Format Drive Step 1</h3>
+					<p>
+						<img src="images/Guided Setup.png" alt="format_yes" width="639" height="473">
+					</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+
+				<section>
+					<h3>Format Drive Step 2</h3>
+					<p>
+					   <img src="images/format_yes.png" alt="format_yes" width="639" height="473">
+					</p>
+				</section>
+
+				<section>
+					<section>
+					<h3>tasksel !</h3>
+					<p>
+					 <img src="images/taskSel.png" alt="taskSel" width="633" height="460">
+					</p>
+					</section>
+					<section>
+					 <ul  style="float: left;">
+  					 <li>LAMP</li>
+  					 <li>Samba</li>
+  					 <li>Email</li>
+  					 <li>OpenSSH Server</li>
+  				</ul>
+  					 <img src="images/taskSel.png" alt="taskSel" width="500" style="float: right;">
+					</section>
+					
+				</section>
+				<section>
+					<h3>command line work</h3>
+						<p class="fragment roll-in">Github Settings <a href="https://github.com/alnutile/default_configs" target="_blank">[click]</a></p>
+						<p class="fragment roll-in">SSH Key</p>
+						<p class="fragment roll-in">Apache Template Site</p>
+						<p class="fragment roll-in">/var/www/where & who</p>
+				</section>
+				
+				<section>
+					<h3>webmin</h3>
+					<p>
+  				<a href="http://172.20.10.7:10000" target="_blank"><img src="images/webmin.png" alt="webmin" width="700"></a>
+					</p>
+					samba | email reading
+				</section>
+				<section>
+				<section>
+				  <h2>Database</h2>
+					<h3>sequelpro!!!</h3>
+					<h4>SSH TUNNEL!!!</h4>
+					<p>http://www.sequelpro.com</p>
+					<p>
+  				<img src="images/sequelpro.png" alt="sequelpro" width="800">
+					</p>
+				</section>
+				<section>
+				  <h3>phpmyadmin</h3>
+					<p>
+  				<a href="http://www.phpmyadmin.net/home_page/downloads.php" target="_blank">Download</a> to /var/www
+  				| Untar
+  				| Go...
+					</p>
+					<p><a href="http://172.20.10.7" target="_blank">phpMyAdmin</a></p>
+				</section>				
+				</section>
+				<section>
+				  <h2>CLONE</h2>				
+				</section>																
+				<section>
+				  <h3>Presentation in reveal.js</h3>	
+					<p>
+						reveal.js and <a href="http://www.rvl.io">rvl.io</a> are entirely free but if you'd like to support the projects you can donate below.
+						Donations will go towards hosting and domain costs.
+					</p>		
+					<p>----------</p>
+					<h3>Me</h3>
+					<p>Alfred Nutile @alnutile </p>
+				</section>
+			
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
